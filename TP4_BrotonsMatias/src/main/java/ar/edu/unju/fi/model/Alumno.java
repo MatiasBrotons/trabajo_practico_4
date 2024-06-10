@@ -1,31 +1,35 @@
 package ar.edu.unju.fi.model;
 
-import java.time.LocalDate;
+import java.util.Calendar;
 
 public class Alumno {
-	private float dni;
+	private String dni;
 	private String nombre;
 	private String apellido;
 	private String email;
-	private float telefono;
-	private LocalDate nacimiento;
+	private String telefono;
+	private Calendar fechadenacimiento;
 	private String domicilio;
-	private float libreta;
-	public Alumno(float dni, String nombre, String apellido, String email, float telefono, LocalDate nacimiento,
-			String domicilio, float libreta) {
+	private String lu;
+	
+	public Alumno() {
+		// TODO Auto-generated constructor stub
+	}
+	public Alumno(String dni, String nombre, String apellido, String email, String telefono, Calendar fechadenacimiento,
+			String domicilio, String lu) {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.email = email;
 		this.telefono = telefono;
-		this.nacimiento = nacimiento;
+		this.fechadenacimiento = fechadenacimiento;
 		this.domicilio = domicilio;
-		this.libreta = libreta;
+		this.lu = lu;
 	}
-	public float getDni() {
+	public String getDni() {
 		return dni;
 	}
-	public void setDni(float dni) {
+	public void setDni(String dni) {
 		this.dni = dni;
 	}
 	public String getNombre() {
@@ -46,17 +50,17 @@ public class Alumno {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public float getTelefono() {
+	public String getTelefono() {
 		return telefono;
 	}
-	public void setTelefono(float telefono) {
+	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	public LocalDate getNacimiento() {
-		return nacimiento;
+	public Calendar getFechadenacimiento() {
+		return fechadenacimiento;
 	}
-	public void setNacimiento(LocalDate nacimiento) {
-		this.nacimiento = nacimiento;
+	public void setFechadenacimiento(Calendar fechadenacimiento) {
+		this.fechadenacimiento = fechadenacimiento;
 	}
 	public String getDomicilio() {
 		return domicilio;
@@ -64,14 +68,14 @@ public class Alumno {
 	public void setDomicilio(String domicilio) {
 		this.domicilio = domicilio;
 	}
-	public float getLibreta() {
-		return libreta;
+	public String getLu() {
+		return lu;
 	}
-	public void setLibreta(float libreta) {
-		this.libreta = libreta;
+	public void setLu(String lu) {
+		this.lu = lu;
 	}
 	
-
+	
 	
 	
 }

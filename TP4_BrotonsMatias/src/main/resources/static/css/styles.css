@@ -2,6 +2,11 @@
 .aside {
     background-color: #f8f9fa;
     position: fixed;
-    height: 100%;
-    width: 20%;
+    width: 200px;
+    height: 48%;
+}
+
+.todo {
+    margin-left: 20%;
+    margin-top: 20px;
 }

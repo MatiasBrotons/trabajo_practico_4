@@ -1,20 +1,23 @@
 package ar.edu.unju.fi.model;
 
 public class Carrera {
-	private Integer codigo;
+	private String codigo;
 	private String nombre;
 	private Integer cant_anios;
 	private Estado estado;
-	public Carrera(Integer codigo, String nombre, Integer cant_anios, Estado estado) {
+	public Carrera(String codigo, String nombre, Integer cant_anios, Estado estado) {
 		this.codigo = codigo;
 		this.nombre = nombre;
 		this.cant_anios = cant_anios;
 		this.estado = estado;
 	}
-	public Integer getCodigo() {
+	public Carrera() {
+		// TODO Auto-generated constructor stub
+	}
+	public String getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(Integer codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 	public String getNombre() {
