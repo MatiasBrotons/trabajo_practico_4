@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Header</title>
 </head>
 <body>
-<!-- 	<nav class="navbar" data-th-fragment="navbar">
-  		  <div class="nav-wrapper">
-    	  <a href="#" class="brand-logo right"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPvRC8lac0tl6cLpxBtdknrwIy_GV_enVGuA&s"></a>
-   	   		<ul id="nav-mobile" class="left hide-on-med-and-down">
-  	     	 <li><a href="sass.html">Sass</a></li>
-  	    	  <li><a href="badges.html">Components</a></li>
- 	     	  <li><a href="collapsible.html">JavaScript</a></li>
- 		     </ul>
- 		   </div>
-  		</nav> -->
-
-	
+<div th:fragment="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Facultad de Ingeniería</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Carreras</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
 </body>
 </html>
