@@ -1,31 +1,15 @@
 package ar.edu.unju.fi.model;
-
-import java.util.Calendar;
-
+import org.springframework.stereotype.Component;
+@Component
 public class Alumno {
 	private String dni;
 	private String nombre;
 	private String apellido;
 	private String email;
 	private String telefono;
-	private Calendar fechadenacimiento;
+	private String fechaNacimiento;
 	private String domicilio;
-	private String lu;
-	
-	public Alumno() {
-		// TODO Auto-generated constructor stub
-	}
-	public Alumno(String dni, String nombre, String apellido, String email, String telefono, Calendar fechadenacimiento,
-			String domicilio, String lu) {
-		this.dni = dni;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.email = email;
-		this.telefono = telefono;
-		this.fechadenacimiento = fechadenacimiento;
-		this.domicilio = domicilio;
-		this.lu = lu;
-	}
+	private String libretaUniversitaria;
 	public String getDni() {
 		return dni;
 	}
@@ -56,11 +40,11 @@ public class Alumno {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	public Calendar getFechadenacimiento() {
-		return fechadenacimiento;
+	public String getFechaNacimiento() {
+		return fechaNacimiento;
 	}
-	public void setFechadenacimiento(Calendar fechadenacimiento) {
-		this.fechadenacimiento = fechadenacimiento;
+	public void setFechaNacimiento(String fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
 	}
 	public String getDomicilio() {
 		return domicilio;
@@ -68,14 +52,10 @@ public class Alumno {
 	public void setDomicilio(String domicilio) {
 		this.domicilio = domicilio;
 	}
-	public String getLu() {
-		return lu;
+	public String getLibretaUniversitaria() {
+		return libretaUniversitaria;
 	}
-	public void setLu(String lu) {
-		this.lu = lu;
+	public void setLibretaUniversitaria(String libretaUniversitaria) {
+		this.libretaUniversitaria = libretaUniversitaria;
 	}
-	
-	
-	
-	
 }
